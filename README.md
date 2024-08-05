@@ -1,0 +1,1 @@
+Frontend(client) side of a medic ordering platform; that allows users to order medics in the case of health emergencies.
