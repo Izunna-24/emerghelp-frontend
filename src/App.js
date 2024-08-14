@@ -1,5 +1,4 @@
-import './App.css';
-import {useRoutes} from "react-router-dom";
+ import {useRoutes} from "react-router-dom";
 import {ROUTES} from "./route";
 function App() {
   return (
