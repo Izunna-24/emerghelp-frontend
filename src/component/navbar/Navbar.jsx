@@ -16,6 +16,15 @@ const Navbar = () => {
         navigate('/login');
     };
 
+    const handleAboutUsClick = () => {
+
+        navigate('/aboutUs');
+    };
+
+    const handleResponseTeamClick = () => {
+
+        navigate('/responseTeam');
+    };
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
@@ -33,8 +42,8 @@ const Navbar = () => {
 
                 <div className='hover:text-black-600 cursor-pointer text-black'>Accept Order</div>
                 <div className='hover:text-black-600 cursor-pointer text-black'>Payment</div>
-                <div className='hover:text-black-600 cursor-pointer text-black'>About us</div>
-                <div className='hover:text-black-600 cursor-pointer text-black'>Response Team</div>
+                <div className='hover:text-black-600 cursor-pointer text-black' onClick={handleAboutUsClick}>About us</div>
+                <div className='hover:text-black-600 cursor-pointer text-black' onClick={handleResponseTeamClick}>Response Team</div>
             </div>
             <div className='flex items-center space-x-4'>
                 <button
