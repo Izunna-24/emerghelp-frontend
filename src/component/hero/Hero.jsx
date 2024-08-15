@@ -24,7 +24,7 @@ const Hero = () => {
                     Register
                 </button>
             </div>
-            <img src={picture} alt="" className="w-auto h-auto"/>
+            <img src={picture} alt="" className="w-auto image-hero h-auto"/>
         </div>
     );
 };
