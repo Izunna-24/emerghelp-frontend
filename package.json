@@ -42,5 +42,9 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.8"
+  },
+  "resolutions": {
+    "react": "17.0.2"
   }
 }
+
