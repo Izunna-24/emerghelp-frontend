@@ -27,7 +27,7 @@ function MedicDashboard() {
                             </a>
                         </li>
                         <li className="p-4 hover:bg-gray-700">
-                            <a href="/orderMedic" className="flex items-center text-lg">
+                            <a href="/accept-request" className="flex items-center text-lg">
                                 <span className="mr-2 text-xl"><FaPhone /></span> Accept Request
                             </a>
                         </li>
