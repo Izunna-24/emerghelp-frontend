@@ -80,3 +80,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+//new changes made
