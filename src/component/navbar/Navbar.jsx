@@ -14,6 +14,15 @@ const Navbar = () => {
         navigate('/login');
     };
 
+    const handleAboutUsClick = () => {
+
+        navigate('/aboutUs');
+    };
+
+    const handleResponseTeamClick = () => {
+
+        navigate('/responseTeam');
+    };
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
@@ -26,35 +35,28 @@ const Navbar = () => {
                     <img src={logo} alt="Main logo" className="h-12 w-auto" />
                 </div>
 
-                {/* Desktop Menu */}
-                <div className="hidden md:flex space-x-6 text-lg">
-                    <div className="hover:text-gray-600 cursor-pointer text-black">Home</div>
-                    <div className="hover:text-gray-600 cursor-pointer text-black">Order Medic</div>
-                    <div className="hover:text-gray-600 cursor-pointer text-black">Accept Order</div>
-                    <div className="hover:text-gray-600 cursor-pointer text-black">Payment</div>
-                    <div className="hover:text-gray-600 cursor-pointer text-black">About Us</div>
-                    <div className="hover:text-gray-600 cursor-pointer text-black">Response Team</div>
-                </div>
 
-                {/* Buttons */}
-                <div className="hidden md:flex items-center space-x-4">
-                    <button
-                        className="bg-blue-900 text-white px-4 py-2 rounded-3xl hover:bg-red-600 transition"
-                        onClick={handleLoginClick}
-                    >
-                        Login
-                    </button>
-                    <button
-                        className="bg-blue-900 text-white px-4 py-2 rounded-3xl hover:bg-red-600 transition"
-                        onClick={handleBecomeAMedicClick}
-                    >
-                        Become A Medic
-                    </button>
-                </div>
+                <div className='hover:text-black-600 cursor-pointer text-black'>Accept Order</div>
+                <div className='hover:text-black-600 cursor-pointer text-black'>Payment</div>
+                <div className='hover:text-black-600 cursor-pointer text-black' onClick={handleAboutUsClick}>About us</div>
+                <div className='hover:text-black-600 cursor-pointer text-black' onClick={handleResponseTeamClick}>Response Team</div>
+            </div>
+            <div className='flex items-center space-x-4'>
+                <button
+                    className='bg-blue-900 text-white px-4 py-2 rounded-3xl hover:bg-red-600'
+                    onClick={handleLoginClick}
+                >
+                    Login
+                </button>
+                <button
+                    className='bg-blue-900 text-white px-4 py-2 rounded-3xl hover:bg-red-600'
+                    onClick={handleBecomeAMedicClick}
+                >
+                    Become A Medic
+                </button>
+                <button className='md:hidden' onClick={toggleMenu}>
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
 
-                {/* Mobile Menu Toggle */}
-                <button className="md:hidden focus:outline-none" onClick={toggleMenu}>
-                    <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                          xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                               d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}></path>
