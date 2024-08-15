@@ -1,9 +1,8 @@
 import {Outlet} from "react-router-dom";
-import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
 import Hero from "../hero/Hero";
 import Emerghelp from "../emerghelp/Emerghelp";
-import Login from "../pages/login/Login";
+import Navbar from "../navBar/Navbar";
 
 
 const Layout = () => {

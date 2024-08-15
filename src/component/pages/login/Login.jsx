@@ -3,35 +3,35 @@ import { FaArrowLeft } from 'react-icons/fa';
 
 const Login = () => {
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-100 bg-cover">
-            <div className="absolute bg-white p-12 rounded-lg shadow-lg w-full max-w-lg">
-                <h1 className="text-3xl font-bold text-center mb-8">Welcome Back!</h1>
-                <p className="text-center text-gray-600 mb-10">Log in by entering your details below</p>
+        <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-red-100 py-12 px-4 sm:px-6 lg:px-8 flex items-center justify-center">
+            <div className="bg-white p-6 md:p-12 rounded-xl shadow-2xl max-w-md w-full transform transition-transform duration-500 hover:scale-105">
+                <h1 className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-8 transition-transform duration-300">Welcome Back!</h1>
+                <p className="text-center text-gray-600 mb-6 md:mb-10 transition-transform duration-300">Log in by entering your details below</p>
                 <input
                     type="text"
                     placeholder="Email"
-                    className="w-full p-4 mb-6 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600"
+                    className="w-full p-3 mb-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-red-600 transition duration-300 hover:border-red-400"
                 />
                 <input
                     type="password"
                     placeholder="Password"
-                    className="w-full p-4 mb-8 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600"
+                    className="w-full p-3 mb-6 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-red-600 transition duration-300 hover:border-red-400"
                 />
                 <button
                     type="submit"
-                    className="w-full bg-red-600 text-white py-4 rounded-lg font-semibold hover:bg-red-600 "
+                    className="w-full bg-gradient-to-r from-red-600 via-red-700 to-red-800 text-white py-3 rounded-md font-semibold transition-transform duration-300 hover:scale-105 hover:bg-gradient-to-r hover:from-red-700 hover:via-red-800 hover:to-red-900 focus:outline-none focus:ring-2 focus:ring-red-600"
                 >
                     Log In
                 </button>
-                <div className="mb-8">
-                    <a href="/" className="text-red-600 hover:underline flex items-center">
-                        <FaArrowLeft className="mr-2"/>
+                <div className="mt-6 md:mt-8">
+                    <a href="/" className="text-red-600 hover:underline flex items-center justify-center transition duration-300 hover:text-red-700">
+                        <FaArrowLeft className="mr-2" />
                         Back
                     </a>
                 </div>
-                <div className="text-center mt-10">
+                <div className="text-center mt-8 md:mt-10">
                     <p className="text-red-600 font-bold">Don't have an account?
-                        <a href="/signUp" className="text-red-600 hover:underline ml-1">Sign Up</a>
+                        <a href="/signUp" className="text-red-600 hover:underline ml-1 transition duration-300 hover:text-red-700">Sign Up</a>
                     </p>
                 </div>
             </div>
