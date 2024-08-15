@@ -6,6 +6,7 @@ import MedicDashboard from "../component/pages/become a medic/MedicDashboard";
 import AboutUs from "../component/navbarpages/AboutUs";
 import ResponseTeam from "../component/navbarpages/ResponseTeam";
 import OrderMedic from "../component/pages/orderMedic/OrderMedic";
+import AcceptRequest from "../component/pages/accept request/AcceptOrder";
 
 
 
@@ -23,6 +24,12 @@ export const ROUTES = [
         path: "/setMedicProfile",
         element: <SetMedicProfile/>,
     },
+    {
+        path:"/accept-request",
+        element: <AcceptRequest/>,
+    },
+
+ 
     {
       path:"/orderMedic",
       element: <OrderMedic/>,
