@@ -4,9 +4,9 @@ import { FaArrowLeft } from 'react-icons/fa';
 const Login = () => {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-red-100 py-12 px-4 sm:px-6 lg:px-8 flex items-center justify-center">
-            <div className="bg-white p-6 md:p-12 rounded-xl shadow-2xl max-w-md md:max-w-lg w-full transform hover:scale-105 transition duration-500">
-                <h1 className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-8">Welcome Back!</h1>
-                <p className="text-center text-gray-600 mb-6 md:mb-10">Log in by entering your details below</p>
+            <div className="bg-white p-6 md:p-12 rounded-xl shadow-2xl max-w-md w-full transform transition-transform duration-500 hover:scale-105">
+                <h1 className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-8 transition-transform duration-300">Welcome Back!</h1>
+                <p className="text-center text-gray-600 mb-6 md:mb-10 transition-transform duration-300">Log in by entering your details below</p>
                 <input
                     type="text"
                     placeholder="Email"
@@ -19,7 +19,7 @@ const Login = () => {
                 />
                 <button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-red-600 via-red-700 to-red-800 text-white py-3 rounded-md font-semibold hover:bg-gradient-to-r hover:from-red-700 hover:via-red-800 hover:to-red-900 focus:outline-none focus:ring-2 focus:ring-red-600 transition duration-300"
+                    className="w-full bg-gradient-to-r from-red-600 via-red-700 to-red-800 text-white py-3 rounded-md font-semibold transition-transform duration-300 hover:scale-105 hover:bg-gradient-to-r hover:from-red-700 hover:via-red-800 hover:to-red-900 focus:outline-none focus:ring-2 focus:ring-red-600"
                 >
                     Log In
                 </button>
