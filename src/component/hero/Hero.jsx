@@ -15,7 +15,7 @@ const Hero = () => {
             <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
                 <h1 className="font-extrabold text-3xl md:text-5xl leading-tight">
                     Welcome to Emerghelp
-                    <span className="block bg-opacity-50 text-red-600 text-xl md:text-3xl mt-2">Health Emergency Help Is At Your Fingertips...</span>
+                    <span className="block bg-opacity-50 text-red-600 text-xl md:text-3xl mt-2">Health Emergency Help Is At Your Fingertip...</span>
                 </h1>
                 <p className="text-lg mt-4 text-blue-900">
                     Providing the response you need, when you need it the most.
