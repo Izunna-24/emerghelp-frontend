@@ -11,7 +11,7 @@ const Hero = () => {
         navigate('/register');
     };
     return (
-        <div className="flex justify-around items-center pt-24">
+        <div className="flex justify-around items-center pt-24 pl-20 ">
             <div>
                 <h1 className=" font-extrabold text-5xl">
                     Welcome to Emerghelp

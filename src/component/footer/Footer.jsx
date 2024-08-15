@@ -12,7 +12,7 @@ const Footer = () => {
     };
 
     return (
-        <div className='bg-red-600 text-white py-20'>
+        <div className='w-full bg-red-600 text-white py-5 px-40'>
             <div className='container mx-auto px-4'>
                 <div className='flex flex-col md:flex-row justify-between items-center'>
                        <div className='mb-4 md:mb-0' style={{marginLeft: "-100px"}}>
