@@ -64,7 +64,7 @@ const Register = () => {
                 </div>
                 <div className="text-center mt-6">
                     <p className="text-red-600 font-bold">Already have an account?
-                        <a href="/login" className="text-red-600 hover:underline ml-1 transition duration-300">Login</a>
+                        <a href="/dashboard" className="text-red-600 hover:underline ml-1 transition duration-300">Dashboard</a>
                     </p>
                 </div>
             </div>

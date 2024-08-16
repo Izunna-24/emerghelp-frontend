@@ -2,59 +2,58 @@ import React from 'react';
 import { FaHome, FaUser, FaBell, FaMoneyBill, FaPhone, FaSms, FaHistory, FaHandsHelping } from 'react-icons/fa';
 
 function Dashboard() {
-
     return (
         <div className="flex min-h-screen bg-gray-100">
-            <aside className="w-64 bg-red-600 text-white hidden lg:block transition-transform duration-300 ease-in-out transform lg:translate-x-0">
+            <aside className="w-64 bg-red-600 text-white hidden lg:block">
                 <nav>
                     <ul>
-                        <li className="p-4 hover:bg-gray-700 transition duration-300">
+                        <li className="p-4 hover:bg-gray-700">
                             <a href="/dashboard" className="flex items-center text-lg">
-                                <span className="mr-2 text-xl"><FaHome/></span> Dashboard
+                                <span className="mr-2 text-xl"><FaHome /></span> Dashboard
                             </a>
                         </li>
-                        <li className="p-4 hover:bg-gray-700 transition duration-300">
+                        <li className="p-4 hover:bg-gray-700">
                             <a href="/profile" className="flex items-center text-lg">
-                                <span className="mr-2 text-xl"><FaUser/></span> Profile
+                                <span className="mr-2 text-xl"><FaUser /></span> Profile
                             </a>
                         </li>
-                        <li className="p-4 hover:bg-gray-700 transition duration-300">
+                        <li className="p-4 hover:bg-gray-700">
                             <a href="/payment" className="flex items-center text-lg">
-                                <span className="mr-2 text-xl"><FaMoneyBill/></span> Payment
+                                <span className="mr-2 text-xl"><FaMoneyBill /></span> Payment
                             </a>
                         </li>
-                        <li className="p-4 hover:bg-gray-700 transition duration-300">
+                        <li className="p-4 hover:bg-gray-700">
                             <a href="/orderMedic" className="flex items-center text-lg">
-                                <span className="mr-2 text-xl"><FaPhone/></span> Order Medic
+                                <span className="mr-2 text-xl"><FaPhone /></span> Order Medic
                             </a>
                         </li>
-                        <li className="p-4 hover:bg-gray-700 transition duration-300">
+                        <li className="p-4 hover:bg-gray-700">
                             <a href="/messageMedic" className="flex items-center text-lg">
-                                <span className="mr-2 text-xl"><FaSms/></span> Message Medic
+                                <span className="mr-2 text-xl"><FaSms /></span> Message Medic
                             </a>
                         </li>
-                        <li className="p-4 hover:bg-gray-700 transition duration-300">
+                        <li className="p-4 hover:bg-gray-700">
                             <a href="/emmergencyHistory" className="flex items-center text-lg">
-                                <span className="mr-2 text-xl"><FaHistory/></span> Emergency History
+                                <span className="mr-2 text-xl"><FaHistory /></span> Emergency History
                             </a>
                         </li>
-                        <li className="p-4 hover:bg-gray-700 transition duration-300">
+                        <li className="p-4 hover:bg-gray-700">
                             <a href="/support" className="flex items-center text-lg">
-                                <span className="mr-2 text-xl"><FaHandsHelping/></span> Support
+                                <span className="mr-2 text-xl"><FaHandsHelping /></span> Support
                             </a>
                         </li>
                     </ul>
                 </nav>
             </aside>
 
-            <div className="flex flex-col flex-grow ml-0 lg:ml-64 transition-all duration-300">
+            <div className="flex-grow ml-0">
                 <header className="bg-white shadow p-4 flex flex-col sm:flex-row justify-between items-center">
                     <div>
-                        <h1 className="text-xl font-semibold">Jumoke Joseph</h1>
+                        <h1 className="text-xl font-semibold">Jumoke Joseph </h1>
                     </div>
                     <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 mt-4 sm:mt-0">
                         <button className="text-gray-600 hover:text-gray-900 transition duration-300">
-                            <FaBell/>
+                            <FaBell />
                         </button>
                         <input
                             type="text"
@@ -85,8 +84,6 @@ function Dashboard() {
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow w-full sm:w-1/2 lg:w-1/4 transition-transform duration-300 hover:scale-105">
                             <h2 className="text-lg font-semibold">Health Monitoring</h2>
-                            <div className="mt-4">
-                            </div>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow w-full sm:w-1/2 lg:w-1/4 transition-transform duration-300 hover:scale-105">
                             <h2 className="text-lg font-semibold">Emergency Calls</h2>

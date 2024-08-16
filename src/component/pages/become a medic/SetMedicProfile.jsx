@@ -52,6 +52,10 @@ const SetMedicProfile = () => {
                         <option value="neurology">Neurology</option>
                         <option value="orthopedics">Orthopedics</option>
                         <option value="pediatrics">Pediatrics</option>
+                        <option value="nurse">Nurse</option>
+                        <option value="labscientist">Lab Scientist</option>
+                        <option value="paramedics">Para Medic</option>
+                        <option value="optometrist">Optometrist</option>
                     </select>
                 </div>
                 <input
