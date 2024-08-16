@@ -14,7 +14,7 @@ const Footer = () => {
         <div className='w-full bg-red-600 text-white py-5 px-4 md:px-20'>
             <div className='container mx-auto'>
                 <div className='flex flex-col md:flex-row justify-between items-center'>
-                    <div className='flex flex-col items-center md:items-start mb-6 md:mb-0'>
+                    <div className='flex flex-col items-center md:items-start mb-6 md:mb-0 ml-0 md:ml-0'>
                         <img src={logo} alt="Logo" className="h-12 w-12 md:h-16 md:w-16 mb-2"/>
                         <p className='text-sm md:text-base font-bold text-center md:text-left'>
                             © 2024 Emerghelp. All rights reserved.
