@@ -49,7 +49,7 @@ function Dashboard() {
             <div className="flex-grow ml-0">
                 <header className="bg-white shadow p-4 flex flex-col sm:flex-row justify-between items-center">
                     <div>
-                        <h1 className="text-xl font-semibold">Jumoke Joseph</h1>
+                        <h1 className="text-xl font-semibold">Jumoke Joseph </h1>
                     </div>
                     <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 mt-4 sm:mt-0">
                         <button className="text-gray-600 hover:text-gray-900 transition duration-300">
