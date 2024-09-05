@@ -11,7 +11,6 @@ const Hero = () => {
 
     return (
         <div className="flex flex-col md:flex-row items-center pt-24 px-4 md:px-20">
-            {/* Text Content */}
             <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
                 <h1 className="font-extrabold text-3xl md:text-5xl leading-tight">
                     Welcome to Emerghelp

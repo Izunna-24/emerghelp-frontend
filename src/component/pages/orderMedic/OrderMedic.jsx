@@ -23,11 +23,9 @@ const OrderMedicPage = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setIsSubmitting(true);
-        // Simulating API call
         setTimeout(() => {
             console.log('Emergency Medic Order submitted:', formData);
             setIsSubmitting(false);
-            // Here you would typically send the formData to your API
         }, 2000);
     };
 

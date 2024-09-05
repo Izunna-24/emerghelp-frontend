@@ -14,7 +14,7 @@ function MedicDashboard() {
                             </a>
                         </li>
                         <div className="w-24 h-24 bg-gray-300 rounded-full mb-4 mx-auto"></div>
-                        <h1 className="text-xl font-bold text-center">Izu</h1>
+                        <h1 className="text-xl font-bold text-center">Funke Alaps</h1>
                         <p className="text-black text-center">Doctor</p>
                         <li className="p-4 hover:bg-gray-700">
                             <a href="/profile" className="flex items-center text-lg">

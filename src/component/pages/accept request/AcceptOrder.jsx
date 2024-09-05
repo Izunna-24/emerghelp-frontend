@@ -1,26 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 
 const incomingOrder = {
-    id: 1,
-    description: 'Patient with chest pain',
-    userId: 123,
-    location: 'Remote Area',
-    distance: 35, // Distance from medic in km
-    coordinates: [3.377417, 6.506125] // Patient's coordinates
+    description: '13 years old male having seizure',
+    location: '314, Sabo Yaba',
+    distance: 10, // Distance from medic in km
+    coordinates: [6.506125, 3.377417] // Patient's coordinates
 };
 
 const AcceptOrderPage = () => {
     const [order, setOrder] = useState(incomingOrder);
     const [response, setResponse] = useState(null);
     const [loading, setLoading] = useState(false);
+    const [medicPosition, setMedicPosition] = useState([6.504015, 3.372335]);
 
-    const handleAcceptOrder = async () => {
+    useEffect(() => {
+        // Simulate live medic movement towards the patient
+        const interval = setInterval(() => {
+            setMedicPosition((prevPosition) => [
+                prevPosition[0] + 0.00001,
+                prevPosition[1] + 0.00001
+            ]);
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    const handleAcceptOrder = () => {
         setLoading(true);
-
-        // Simulate order acceptance
         setTimeout(() => {
             setResponse({
                 success: true,
@@ -30,10 +39,8 @@ const AcceptOrderPage = () => {
         }, 1000);
     };
 
-    const handleRejectOrder = async () => {
+    const handleRejectOrder = () => {
         setLoading(true);
-
-        // Simulate order rejection
         setTimeout(() => {
             setResponse({
                 success: false,
@@ -52,13 +59,13 @@ const AcceptOrderPage = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h1 className="text-2xl font-bold mb-4">Emergency Order</h1>
+                    <h1 className="text-3xl font-bold mb-4">Emergency Order</h1>
                     <motion.div
                         className="bg-red-400 text-white p-6 rounded-lg shadow-lg mb-4"
                         animate={{ scale: [1, 1.05, 1] }}
                         transition={{ duration: 1, repeat: Infinity, repeatType: 'reverse' }}
                     >
-                        <p className="text-lg font-semibold">Order ID: {order.id}</p>
+                        <p className="text-lg font-semibold">Order Details</p>
                         <p className="text-sm mb-2">Description: {order.description}</p>
                         <p className="text-sm mb-2">Location: {order.location}</p>
                         <p className="text-sm mb-4">Distance: {order.distance} km</p>
@@ -95,10 +102,11 @@ const AcceptOrderPage = () => {
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     />
+                    <Marker position={medicPosition} icon={L.icon({ iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png', iconSize: [25, 41], iconAnchor: [12, 41], popupAnchor: [1, -34] })}>
+                        <Popup>Medic is on the way</Popup>
+                    </Marker>
                     <Marker position={order.coordinates} icon={L.icon({ iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png', iconSize: [25, 41], iconAnchor: [12, 41], popupAnchor: [1, -34] })}>
-                        <Popup>
-                            Patient's Location
-                        </Popup>
+                        <Popup>Patient's Location</Popup>
                     </Marker>
                 </MapContainer>
             </div>
